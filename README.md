@@ -10,7 +10,7 @@ HTML5 was a great leap forward for web developers. It gave us all kinds of hip n
 
 Imagine being able to mark something up the way you want to mark it up. Imagine changing <div id="wrapper"> to <wrapper> or a better example, making a calendar like:
 
-```
+```xml
 <calendar>
   <month name="January">
     <day>1</day>
@@ -35,7 +35,7 @@ In HTML6 we take advantage of this ingenious concept by giving us freedom to use
 
 So, what does this look like? Below is an example of a full HTML6 document. We'll go over each tag and attributes in the API section.
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
     <html:head>
@@ -96,7 +96,7 @@ This begins a HTML document. Equivelent to the current `<html>` tag.
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <!-- rest of HTML would go here -->
@@ -108,7 +108,7 @@ This begins an HTML's head. Equivelent to the current `<html>` tag. The tag cont
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -123,7 +123,7 @@ This is the title of the HTML document. Equivalent to the current `<title>` tag.
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -138,7 +138,7 @@ This is a bit different then the current HTML version. Meta data in HTML6 can be
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -159,7 +159,7 @@ This links external documents and scripts such as CSS, JavaScript, RSS, favicons
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -175,7 +175,7 @@ This is the body of the HTML document. Equivalent to the current `<body>` tag. T
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -199,7 +199,7 @@ Attributes available to the `<a>` tag are:
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -219,7 +219,7 @@ Attributes available to the `<html:button>` tag are:
 
 - `disabled`
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -237,7 +237,7 @@ This tag encapsulates what we now have for media which are tags like `<img>`, `<
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -264,7 +264,7 @@ This tag creates a new form. Has two attributes, `method` and `action`. As with 
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -318,7 +318,7 @@ The following are attributes that will work on any input except file inputs:
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -359,7 +359,7 @@ Attributes that work for all select types are:
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -391,7 +391,7 @@ Attributes that work for all status types are:
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -419,7 +419,7 @@ Attributes that work for the `<form:label>` tag are:
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
@@ -447,7 +447,7 @@ Attributes that work for the `<form:submit>` tag are:
 
 _Example:_
 
-```
+```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
