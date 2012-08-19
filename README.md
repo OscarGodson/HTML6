@@ -329,10 +329,10 @@ _Example:_
       <!-- Simple input (defaults to text) -->
       <form:input>
       <!--  A new HTML6 match example -->
-      <input type="password" name="user_password">
-      <input type="password" match="user_password">
+      <form:input type="password" name="user_password">
+      <form:input type="password" match="user_password">
       <!-- Advanced example -->
-      <input type="email" placeholder="user@site.com" autofocus required>
+      <form:input type="email" placeholder="user@site.com" autofocus required>
     </form:form>    
   </html:body>
 </html:html>
