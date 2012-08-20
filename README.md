@@ -6,7 +6,7 @@
 
 ### Section 1 - Introduction
 
-HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like `<header>`, `<nav>` and `<footer>`. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a missing void that HTML5 has yet to fix and that void is truly semantic markup.
+HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like `<header>`, `<nav>` and `<footer>`. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a void that HTML5 has yet to fix and that void is truly semantic markup.
 
 Imagine being able to mark something up the way you want to mark it up. Imagine changing <div id="wrapper"> to <wrapper> or a better example, making a calendar like:
 
