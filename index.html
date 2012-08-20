@@ -14,7 +14,7 @@
 </p>
 <h2>The Spec That Brings Us Freedom</h2>
 <h3>Section 1 - Introduction</h3>
-<p>HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> and <code>&lt;footer&gt;</code>. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a void that HTML5 has yet to fix and that void is truly semantic markup.
+<p>HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> and <code>&lt;footer&gt;</code>. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a void that HTML5 has yet to fill and that void is truly semantic markup.
 
 </p>
 <p>Imagine being able to mark something up the way you want to mark it up. Imagine changing <code>&lt;div id=&quot;wrapper&quot;&gt;</code> to <code>&lt;wrapper&gt;</code> or a better example, making a calendar like:
@@ -38,7 +38,7 @@
 
 </p>
 <h3>Section 2 - The Concept</h3>
-<p>HTML6 is conceptually HTML with XML like namespaces. If you don&#39;t know XML, or don&#39;t know what XML namespaces are they&#39;re basically a way to allow you to use the same tag without it conflicting with the a different tag. You&#39;ve probably actually seen one before in the XHTML DOCTYPE: <code>xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot;</code>
+<p>HTML6 is conceptually HTML with XML like namespaces. If you don&#39;t know XML, or don&#39;t know what XML namespaces are they&#39;re basically a way to allow you to use the same tag without it conflicting with a different tag. You&#39;ve probably actually seen one before in the XHTML DOCTYPE: <code>xmlns:xhtml=&quot;http://www.w3.org/1999/xhtml&quot;</code>
 
 </p>
 <p>In HTML6 we take advantage of this ingenious concept by giving us freedom to use whatever tag we want by the W3C reserving namespaces and not tags. The W3C would basically reserve the right to all namespaces, and each namespace they reserve will trigger a different HTML API.
@@ -90,7 +90,7 @@
 <p>As you&#39;ll see, there are some weird <code>&lt;html:x&gt;</code> tags throughout this sample. Those are the namespaced elements that belong to the W3C and HTML6 spec. These elements trigger browser events. For example, the <code>&lt;html:media type=&quot;image&quot;&gt;</code> element will make an image appear or, the <code>&lt;html:title&gt;</code> element makes the title bar of the browser change and so on.
 
 </p>
-<p>All those other elements are just for you. None of those elements mean anything really to the browser. Simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like <code>&lt;p&gt;</code> or the <code>&lt;h1&gt;</code> tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used <code>&lt;paragraph&gt;</code>, <code>&lt;text&gt;</code>, or <code>&lt;helloworldanythingiwant&gt;</code>. 
+<p>All those other elements are just for you. None of those elements mean anything to the browser. They&#39;re simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like <code>&lt;p&gt;</code> or the <code>&lt;h1&gt;</code> tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used <code>&lt;paragraph&gt;</code>, <code>&lt;text&gt;</code>, or <code>&lt;helloworldanythingiwant&gt;</code>. 
 
 </p>
 <p>It&#39;s whatever makes sense to you and your application.
@@ -98,7 +98,7 @@
 </p>
 <h3>Section 3 - The APIs</h3>
 <h4>Section 3A - HTML API</h4>
-<p>All of the following tags in this API have the namespace html like: <code>&lt;html:title&gt;</code>
+<p>All of the following tags in this API have the namespace <code>html</code> like: <code>&lt;html:title&gt;</code>
 
 </p>
 <h5><code>&lt;html:html&gt;</code></h5>
@@ -113,7 +113,7 @@
   &lt;!-- rest of HTML would go here --&gt;
 &lt;/html:html&gt;</code></pre>
 <h5><code>&lt;html:head&gt;</code></h5>
-<p>This begins an HTML&#39;s head. Equivelent to the current <code>&lt;html&gt;</code> tag. The tag contains data that isn&#39;t actually displayed (aside from the <code>&lt;html:title&gt;</code> which is displayed in browser&#39;s windows). Rather, it&#39;s purpose is to get data and scripts that affect the display of the content in the <code>&lt;html:body&gt;</code>. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.
+<p>This begins an HTML&#39;s head. Equivelent to the current <code>&lt;html&gt;</code> tag. The tag contains data that isn&#39;t actually displayed (aside from the <code>&lt;html:title&gt;</code> which is displayed in the browser&#39;s windows). Rather, it&#39;s purpose is to get data and scripts that affect the display of the content in the <code>&lt;html:body&gt;</code>. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.
 
 </p>
 <p><em>Example:</em>
@@ -139,7 +139,7 @@
   &lt;/html:head&gt;
 &lt;/html:html&gt;</code></pre>
 <h5><code>&lt;html:meta&gt;</code></h5>
-<p>This is a bit different then the current HTML version. Meta data in HTML6 can be anything. Unlike HTML now, there are no required or non-standard meta types. Used to store content for you as a developer, or for other sites as a way to grab information such as a page description.
+<p>This is a bit different then the current HTML version. Meta data in HTML6 can be anything. Unlike HTML now, there are no required or non-standard meta types. It&#39;s used to store content for you as a developer, or for other sites as a way to grab information such as a page description.
 
 </p>
 <p><em>Example:</em>
@@ -467,14 +467,14 @@
   &lt;/html:body&gt;
 &lt;/html:html&gt;</code></pre>
 <h3>Section 4 - Using HTML6 Now</h3>
-<p>Unfortunately you can&#39;t but I&#39;m hard at work on a polyfill that will transform your HTML6 document into a normal HTML document with JS. There will be a front-end one which I wouldn&#39;t use in production due to the processing time and because search engines won&#39;t understand what the document is; and a Node.js one which will transform it and give it to the browser as if it were HTML.
+<p>Unfortunately you can&#39;t but I&#39;m hard at work on a polyfill that will transform your HTML6 document into a normal HTML document with JS. There will be a front-end one (which I wouldn&#39;t use in production due to the processing time and because search engines won&#39;t understand what the document is) and a Node.js one which will transform it and give it to the browser as if it were HTML.
 
 </p>
 <p>If you&#39;d like it in another language submit it to the <a href="https://github.com/OscarGodson/HTML6/issues">issue tracker</a> or send a <a href="https://github.com/OscarGodson/HTML6/pulls">pull request</a>.
 
 </p>
 <h3>Section 5 - Conclusion</h3>
-<p>This is simply an idea. It&#39;s an idea I&#39;ve personally had for a long time, but it&#39;s in no way finished. There&#39;s still a lot missing and a lot I haven&#39;t yet thought about, but it&#39;s a start. I&#39;d love to hear your thoughts in the <a href="https://github.com/OscarGodson/HTML6/issues">issue tracker</a> or better yet, send a <a href="https://github.com/OscarGodson/HTML6/pulls">pull request</a> of what you think should be changed or added.
+<p>This is simply an idea. It&#39;s an idea I&#39;ve personally <a href="http://kneedeepincode.com/topics/a-better-html/">had for years</a>, but it&#39;s in no way finished. There&#39;s still a lot missing and a lot I haven&#39;t yet thought about, but it&#39;s a start. I&#39;d love to hear your thoughts in the <a href="https://github.com/OscarGodson/HTML6/issues">issue tracker</a> or better yet, send a <a href="https://github.com/OscarGodson/HTML6/pulls">pull request</a> of what you think should be changed or added.
 
 </p>
 <h4>Copyright on all documents and code:</h4>

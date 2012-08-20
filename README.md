@@ -6,7 +6,7 @@
 
 ### Section 1 - Introduction
 
-HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like `<header>`, `<nav>` and `<footer>`. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a void that HTML5 has yet to fix and that void is truly semantic markup.
+HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like `<header>`, `<nav>` and `<footer>`. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a void that HTML5 has yet to fill and that void is truly semantic markup.
 
 Imagine being able to mark something up the way you want to mark it up. Imagine changing `<div id="wrapper">` to `<wrapper>` or a better example, making a calendar like:
 
@@ -29,7 +29,7 @@ Now, without further adieu, let me introduce you to HTML6.
 
 ### Section 2 - The Concept
 
-HTML6 is conceptually HTML with XML like namespaces. If you don't know XML, or don't know what XML namespaces are they're basically a way to allow you to use the same tag without it conflicting with the a different tag. You've probably actually seen one before in the XHTML DOCTYPE: `xmlns:xhtml="http://www.w3.org/1999/xhtml"`
+HTML6 is conceptually HTML with XML like namespaces. If you don't know XML, or don't know what XML namespaces are they're basically a way to allow you to use the same tag without it conflicting with a different tag. You've probably actually seen one before in the XHTML DOCTYPE: `xmlns:xhtml="http://www.w3.org/1999/xhtml"`
 
 In HTML6 we take advantage of this ingenious concept by giving us freedom to use whatever tag we want by the W3C reserving namespaces and not tags. The W3C would basically reserve the right to all namespaces, and each namespace they reserve will trigger a different HTML API.
 
@@ -80,7 +80,7 @@ So, what does this look like? Below is an example of a full HTML6 document. We'l
 
 As you'll see, there are some weird `<html:x>` tags throughout this sample. Those are the namespaced elements that belong to the W3C and HTML6 spec. These elements trigger browser events. For example, the `<html:media type="image">` element will make an image appear or, the `<html:title>` element makes the title bar of the browser change and so on.
 
-All those other elements are just for you. None of those elements mean anything really to the browser. Simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like `<p>` or the `<h1>` tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used `<paragraph>`, `<text>`, or `<helloworldanythingiwant>`. 
+All those other elements are just for you. None of those elements mean anything to the browser. They're simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like `<p>` or the `<h1>` tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used `<paragraph>`, `<text>`, or `<helloworldanythingiwant>`. 
 
 It's whatever makes sense to you and your application.
 
@@ -88,7 +88,7 @@ It's whatever makes sense to you and your application.
 
 #### Section 3A - HTML API
 
-All of the following tags in this API have the namespace html like: `<html:title>`
+All of the following tags in this API have the namespace `html` like: `<html:title>`
 
 ##### `<html:html>`
 
@@ -104,7 +104,7 @@ _Example:_
 ```
 ##### `<html:head>`
 
-This begins an HTML's head. Equivelent to the current `<html>` tag. The tag contains data that isn't actually displayed (aside from the `<html:title>` which is displayed in browser's windows). Rather, it's purpose is to get data and scripts that affect the display of the content in the `<html:body>`. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.
+This begins an HTML's head. Equivelent to the current `<html>` tag. The tag contains data that isn't actually displayed (aside from the `<html:title>` which is displayed in the browser's windows). Rather, it's purpose is to get data and scripts that affect the display of the content in the `<html:body>`. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.
 
 _Example:_
 
@@ -134,7 +134,7 @@ _Example:_
 
 ##### `<html:meta>`
 
-This is a bit different then the current HTML version. Meta data in HTML6 can be anything. Unlike HTML now, there are no required or non-standard meta types. Used to store content for you as a developer, or for other sites as a way to grab information such as a page description.
+This is a bit different then the current HTML version. Meta data in HTML6 can be anything. Unlike HTML now, there are no required or non-standard meta types. It's used to store content for you as a developer, or for other sites as a way to grab information such as a page description.
 
 _Example:_
 
@@ -467,13 +467,13 @@ _Example:_
 
 ### Section 4 - Using HTML6 Now
 
-Unfortunately you can't but I'm hard at work on a polyfill that will transform your HTML6 document into a normal HTML document with JS. There will be a front-end one which I wouldn't use in production due to the processing time and because search engines won't understand what the document is; and a Node.js one which will transform it and give it to the browser as if it were HTML.
+Unfortunately you can't but I'm hard at work on a polyfill that will transform your HTML6 document into a normal HTML document with JS. There will be a front-end one (which I wouldn't use in production due to the processing time and because search engines won't understand what the document is) and a Node.js one which will transform it and give it to the browser as if it were HTML.
 
 If you'd like it in another language submit it to the [issue tracker](https://github.com/OscarGodson/HTML6/issues) or send a [pull request](https://github.com/OscarGodson/HTML6/pulls).
 
 ### Section 5 - Conclusion
 
-This is simply an idea. It's an idea I've personally had for a long time, but it's in no way finished. There's still a lot missing and a lot I haven't yet thought about, but it's a start. I'd love to hear your thoughts in the [issue tracker](https://github.com/OscarGodson/HTML6/issues) or better yet, send a [pull request](https://github.com/OscarGodson/HTML6/pulls) of what you think should be changed or added.
+This is simply an idea. It's an idea I've personally [had for years](http://kneedeepincode.com/topics/a-better-html/), but it's in no way finished. There's still a lot missing and a lot I haven't yet thought about, but it's a start. I'd love to hear your thoughts in the [issue tracker](https://github.com/OscarGodson/HTML6/issues) or better yet, send a [pull request](https://github.com/OscarGodson/HTML6/pulls) of what you think should be changed or added.
 
 #### Copyright on all documents and code:
 
