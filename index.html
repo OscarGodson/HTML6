@@ -8,200 +8,247 @@
   </head>
   <body>
     <a href="https://github.com/OscarGodson/HTML6"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
-    <h1>HTML6</h1>
+      <div class="page">
+    
+  <div class="previewPage">
+    <div id="readme" class="announce md">
+      <article class="markdown-body entry-content">
+        <h1>
+<a name="html6" class="anchor" href="#html6"><span class="mini-icon mini-icon-link"></span></a>HTML6</h1>
 
-<p><img src="https://raw.github.com/OscarGodson/HTML6/master/malay.jpg" alt="HTML6" title="" /></p>
+<p><a href="https://raw.github.com/OscarGodson/HTML6/master/malay.jpg" target="_blank"><img src="Grip_soubory/malay.jpg" alt="HTML6" style="max-width:100%;"></a></p>
 
-<h2>The Spec That Brings Us Freedom</h2>
+<h2>
+<a name="the-spec-that-brings-us-freedom" class="anchor" href="#the-spec-that-brings-us-freedom"><span class="mini-icon mini-icon-link"></span></a>The Spec That Brings Us Freedom</h2>
 
-<h3>Section 1 - Introduction</h3>
+<h3>
+<a name="section-1---introduction" class="anchor" href="#section-1---introduction"><span class="mini-icon mini-icon-link"></span></a>Section 1 - Introduction</h3>
 
-<p>HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> and <code>&lt;footer&gt;</code>. It also gave us slick new JavaScript APIs like drag and drop, localStorage, and geolocation. Still, however, there is a void that HTML5 has yet to fill and that void is truly semantic markup.</p>
+<p>HTML5 was a great leap forward for web developers. It gave us all kinds of hip new tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code> and <code>&lt;footer&gt;</code>.
+ It also gave us slick new JavaScript APIs like drag and drop,
+localStorage, and geolocation. Still, however, there is a void that
+HTML5 has yet to fill and that void is truly semantic markup.</p>
 
 <p>Imagine being able to mark something up the way you want to mark it up. Imagine changing <code>&lt;div id="wrapper"&gt;</code> to <code>&lt;wrapper&gt;</code> or a better example, making a calendar like:</p>
 
-<p><code>xml
-&lt;calendar&gt;
-  &lt;month name="January"&gt;
-    &lt;day&gt;1&lt;/day&gt;
-    &lt;day&gt;2&lt;/day&gt;
-    &lt;day&gt;3&lt;/day&gt;
-    &lt;!-- ...and so on --&gt;
-  &lt;/month&gt;
-&lt;/calendar&gt;
-</code></p>
+<div class="highlight"><pre><span class="nt">&lt;calendar&gt;</span>
+  <span class="nt">&lt;month</span> <span class="na">name=</span><span class="s">"January"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;day&gt;</span>1<span class="nt">&lt;/day&gt;</span>
+    <span class="nt">&lt;day&gt;</span>2<span class="nt">&lt;/day&gt;</span>
+    <span class="nt">&lt;day&gt;</span>3<span class="nt">&lt;/day&gt;</span>
+    <span class="c">&lt;!-- ...and so on --&gt;</span>
+  <span class="nt">&lt;/month&gt;</span>
+<span class="nt">&lt;/calendar&gt;</span>
+</pre></div>
 
-<p>Even better yet, how about finally adding support for new types of media by simply changing the media type rather than having to come up with whole new tags for it like <code>&lt;img&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, and so on? For example, wouldn't it be nice to just simply do: <code>&lt;html:media src="my-audio-file.aac" type="aac"&gt;</code> and let the browser deal with how to render it?</p>
+<p>Even better yet, how about finally adding support for new types of
+media by simply changing the media type rather than having to come up
+with whole new tags for it like <code>&lt;img&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, and so on? For example, wouldn't it be nice to just simply do: <code>&lt;html:media src="my-audio-file.aac" type="aac"&gt;</code> and let the browser deal with how to render it?</p>
 
-<p>The web is moving towards a giant app store and we need to embrace it. The markup we use shouldn't work against us, it should work for us. This spec is to do just that. To finally break free of fatuous rules and standards and to give us, developers, total freedom to code as we please bringing the web a more semantic, clean, and human readable markup.</p>
+<p>The web is moving towards a giant app store and we need to embrace
+it. The markup we use shouldn't work against us, it should work for us.
+This spec is to do just that. To finally break free of fatuous rules and
+ standards and to give us, developers, total freedom to code as we
+please bringing the web a more semantic, clean, and human readable
+markup.</p>
 
 <p>Now, without further adieu, let me introduce you to HTML6.</p>
 
-<h3>Section 2 - The Concept</h3>
+<h3>
+<a name="section-2---the-concept" class="anchor" href="#section-2---the-concept"><span class="mini-icon mini-icon-link"></span></a>Section 2 - The Concept</h3>
 
-<p>HTML6 is conceptually HTML with XML like namespaces. If you don't know XML, or don't know what XML namespaces are they're basically a way to allow you to use the same tag without it conflicting with a different tag. You've probably actually seen one before in the XHTML DOCTYPE: <code>xmlns:xhtml="http://www.w3.org/1999/xhtml"</code></p>
+<p>HTML6 is conceptually HTML with XML like namespaces. If you don't
+know XML, or don't know what XML namespaces are they're basically a way
+to allow you to use the same tag without it conflicting with a different
+ tag. You've probably actually seen one before in the XHTML DOCTYPE: <code>xmlns:xhtml="http://www.w3.org/1999/xhtml"</code></p>
 
-<p>In HTML6 we take advantage of this ingenious concept by giving us freedom to use whatever tag we want by the W3C reserving namespaces and not tags. The W3C would basically reserve the right to all namespaces, and each namespace they reserve will trigger a different HTML API.</p>
+<p>In HTML6 we take advantage of this ingenious concept by giving us
+freedom to use whatever tag we want by the W3C reserving namespaces and
+not tags. The W3C would basically reserve the right to all namespaces,
+and each namespace they reserve will trigger a different HTML API.</p>
 
-<p>So, what does this look like? Below is an example of a full HTML6 document. We'll go over each tag and attributes in the API section.</p>
+<p>So, what does this look like? Below is an example of a full HTML6
+document. We'll go over each tag and attributes in the API section.</p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-    &lt;html:head&gt;
-        &lt;html:title&gt;HTML6 Sample&lt;/html:title&gt;
-        &lt;html:meta type="title" value="Page Title"&gt;
-        &lt;html:meta type="description" value="This is an example of HTML with namespaces"&gt;
-        &lt;html:link src="css/main.css" title="Main Styles" type="text/css"&gt;
-        &lt;html:link src="js/main.js" title="Main Script" type="text/javascript"&gt;
-    &lt;/html:head&gt;
-    &lt;html:body&gt;
-        &lt;header&gt;
-            &lt;logo&gt;
-                &lt;html:media type="image" src="images/logo.png"&gt;
-            &lt;/logo&gt;
-            &lt;nav&gt;
-               &lt;html:a href="/cats"&gt;Cats&lt;/a&gt;
-               &lt;html:a href="/dogs"&gt;Dogs&lt;/a&gt;
-               &lt;html:a href="/rain"&gt;Rain&lt;/a&gt;
-            &lt;/nav&gt;
-        &lt;/header&gt;
-        &lt;content&gt;
-            &lt;article&gt;
-                &lt;h1&gt;This is my main article head&lt;/h1&gt;
-                &lt;h2&gt;This is my sub head&lt;/h2&gt;
-                &lt;p&gt;[...]&lt;/p&gt;
-                &lt;p&gt;[...]&lt;/p&gt;
-            &lt;/article&gt;
-            &lt;article&gt;
-                &lt;h1&gt;A cool video!&lt;/h1&gt;
-                &lt;h2&gt;Pay attetion to the media elements&lt;/h2&gt;
-                &lt;p&gt;[...]&lt;/p&gt;
-                &lt;html:media type="video" src="vids/funny-cat.mp4" autostart controls&gt;
-                &lt;p&gt;Man, that was a stupid cat.&lt;/p&gt;
-            &lt;/article&gt;
-        &lt;/content&gt;
-        &lt;footer&gt;
-            &lt;copyright&gt;This site is &amp;copy; to Oscar Godson 2009&lt;/copyright&gt;
-        &lt;/footer&gt;
-    &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+    <span class="nt">&lt;html:head&gt;</span>
+        <span class="nt">&lt;html:title&gt;</span>HTML6 Sample<span class="nt">&lt;/html:title&gt;</span>
+        <span class="nt">&lt;html:meta</span> <span class="na">type=</span><span class="s">"title"</span> <span class="na">value=</span><span class="s">"Page Title"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;html:meta</span> <span class="na">type=</span><span class="s">"description"</span> <span class="na">value=</span><span class="s">"This is an example of HTML with namespaces"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;html:link</span> <span class="na">src=</span><span class="s">"css/main.css"</span> <span class="na">title=</span><span class="s">"Main Styles"</span> <span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;html:link</span> <span class="na">src=</span><span class="s">"js/main.js"</span> <span class="na">title=</span><span class="s">"Main Script"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/html:head&gt;</span>
+    <span class="nt">&lt;html:body&gt;</span>
+        <span class="nt">&lt;header&gt;</span>
+            <span class="nt">&lt;logo&gt;</span>
+                <span class="nt">&lt;html:media</span> <span class="na">type=</span><span class="s">"image"</span> <span class="na">src=</span><span class="s">"images/logo.png"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/logo&gt;</span>
+            <span class="nt">&lt;nav&gt;</span>
+               <span class="nt">&lt;html:a</span> <span class="na">href=</span><span class="s">"/cats"</span><span class="nt">&gt;</span>Cats<span class="nt">&lt;/a&gt;</span>
+               <span class="nt">&lt;html:a</span> <span class="na">href=</span><span class="s">"/dogs"</span><span class="nt">&gt;</span>Dogs<span class="nt">&lt;/a&gt;</span>
+               <span class="nt">&lt;html:a</span> <span class="na">href=</span><span class="s">"/rain"</span><span class="nt">&gt;</span>Rain<span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/nav&gt;</span>
+        <span class="nt">&lt;/header&gt;</span>
+        <span class="nt">&lt;content&gt;</span>
+            <span class="nt">&lt;article&gt;</span>
+                <span class="nt">&lt;h1&gt;</span>This is my main article head<span class="nt">&lt;/h1&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>This is my sub head<span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p&gt;</span>[...]<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;</span>[...]<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/article&gt;</span>
+            <span class="nt">&lt;article&gt;</span>
+                <span class="nt">&lt;h1&gt;</span>A cool video!<span class="nt">&lt;/h1&gt;</span>
+                <span class="nt">&lt;h2&gt;</span>Pay attetion to the media elements<span class="nt">&lt;/h2&gt;</span>
+                <span class="nt">&lt;p&gt;</span>[...]<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;html:media</span> <span class="na">type=</span><span class="s">"video"</span> <span class="na">src=</span><span class="s">"vids/funny-cat.mp4"</span> <span class="err">autostart</span> <span class="err">controls</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Man, that was a stupid cat.<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/article&gt;</span>
+        <span class="nt">&lt;/content&gt;</span>
+        <span class="nt">&lt;footer&gt;</span>
+            <span class="nt">&lt;copyright&gt;</span>This site is <span class="ni">&amp;copy;</span> to Oscar Godson 2009<span class="nt">&lt;/copyright&gt;</span>
+        <span class="nt">&lt;/footer&gt;</span>
+    <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p>As you'll see, there are some weird <code>&lt;html:x&gt;</code> tags throughout this sample. Those are the namespaced elements that belong to the W3C and HTML6 spec. These elements trigger browser events. For example, the <code>&lt;html:media type="image"&gt;</code> element will make an image appear or, the <code>&lt;html:title&gt;</code> element makes the title bar of the browser change and so on.</p>
+<p>As you'll see, there are some weird <code>&lt;html:x&gt;</code> tags
+throughout this sample. Those are the namespaced elements that belong to
+ the W3C and HTML6 spec. These elements trigger browser events. For
+example, the <code>&lt;html:media type="image"&gt;</code> element will make an image appear or, the <code>&lt;html:title&gt;</code> element makes the title bar of the browser change and so on.</p>
 
-<p>All those other elements are just for you. None of those elements mean anything to the browser. They're simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like <code>&lt;p&gt;</code> or the <code>&lt;h1&gt;</code> tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used <code>&lt;paragraph&gt;</code>, <code>&lt;text&gt;</code>, or <code>&lt;helloworldanythingiwant&gt;</code>. </p>
+<p>All those other elements are just for you. None of those elements
+mean anything to the browser. They're simply hooks for CSS and JS and to
+ make your code more semantic. The HTML elements you see in there like <code>&lt;p&gt;</code> or the <code>&lt;h1&gt;</code> tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used <code>&lt;paragraph&gt;</code>, <code>&lt;text&gt;</code>, or <code>&lt;helloworldanythingiwant&gt;</code>. </p>
 
 <p>It's whatever makes sense to you and your application.</p>
 
-<h3>Section 3 - The APIs</h3>
+<h3>
+<a name="section-3---the-apis" class="anchor" href="#section-3---the-apis"><span class="mini-icon mini-icon-link"></span></a>Section 3 - The APIs</h3>
 
-<h4>Section 3A - HTML API</h4>
+<h4>
+<a name="section-3a---html-api" class="anchor" href="#section-3a---html-api"><span class="mini-icon mini-icon-link"></span></a>Section 3A - HTML API</h4>
 
 <p>All of the following tags in this API have the namespace <code>html</code> like: <code>&lt;html:title&gt;</code></p>
 
-<h5><code>&lt;html:html&gt;</code></h5>
+<h5>
+<a name="htmlhtml" class="anchor" href="#htmlhtml"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:html&gt;</code>
+</h5>
 
 <p>This begins a HTML document. Equivelent to the current <code>&lt;html&gt;</code> tag.</p>
 
 <p><em>Example:</em></p>
 
-```xml
-<!DOCTYPE html>
-<html:html>
-  <!-- rest of HTML would go here -->
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="c">&lt;!-- rest of HTML would go here --&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p></html:html>
-```</p>
+<h5>
+<a name="htmlhead" class="anchor" href="#htmlhead"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:head&gt;</code>
+</h5>
 
-<h5><code>&lt;html:head&gt;</code></h5>
-
-<p>This begins an HTML's head. Equivelent to the current <code>&lt;html&gt;</code> tag. The tag contains data that isn't actually displayed (aside from the <code>&lt;html:title&gt;</code> which is displayed in the browser's windows). Rather, it's purpose is to get data and scripts that affect the display of the content in the <code>&lt;html:body&gt;</code>. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.</p>
+<p>This begins an HTML's head. Equivelent to the current <code>&lt;html&gt;</code> tag. The tag contains data that isn't actually displayed (aside from the <code>&lt;html:title&gt;</code>
+ which is displayed in the browser's windows). Rather, it's purpose is
+to get data and scripts that affect the display of the content in the <code>&lt;html:body&gt;</code>. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.</p>
 
 <p><em>Example:</em></p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;!-- Head content here, like the &lt;html:title&gt; tag --&gt;
-  &lt;/html:head&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="c">&lt;!-- Head content here, like the &lt;html:title&gt; tag --&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<h5><code>&lt;html:title&gt;</code></h5>
+<h5>
+<a name="htmltitle" class="anchor" href="#htmltitle"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:title&gt;</code>
+</h5>
 
 <p>This is the title of the HTML document. Equivalent to the current <code>&lt;title&gt;</code> tag. Browsers will use this for the tab bar, favorites, etc. and search engines will use this as the title of their links</p>
 
 <p><em>Example:</em></p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<h5><code>&lt;html:meta&gt;</code></h5>
+<h5>
+<a name="htmlmeta" class="anchor" href="#htmlmeta"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:meta&gt;</code>
+</h5>
 
-<p>This is a bit different then the current HTML version. Meta data in HTML6 can be anything. Unlike HTML now, there are no required or non-standard meta types. It's used to store content for you as a developer, or for other sites as a way to grab information such as a page description.</p>
+<p>This is a bit different then the current HTML version. Meta data in
+HTML6 can be anything. Unlike HTML now, there are no required or
+non-standard meta types. It's used to store content for you as a
+developer, or for other sites as a way to grab information such as a
+page description.</p>
 
 <p><em>Example:</em></p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-    &lt;html:meta type="description" value="This is an example of HTML with namespaces"&gt;
-  &lt;/html:head&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+    <span class="nt">&lt;html:meta</span> <span class="na">type=</span><span class="s">"description"</span> <span class="na">value=</span><span class="s">"This is an example of HTML with namespaces"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<h5><code>&lt;html:link&gt;</code></h5>
+<h5>
+<a name="htmllink" class="anchor" href="#htmllink"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:link&gt;</code>
+</h5>
 
-<p>This links external documents and scripts such as CSS, JavaScript, RSS, favicons, etc. to the current document. Equivalent to the current <code>&lt;link&gt;</code> tag. This tag takes the following attributes:</p>
+<p>This links external documents and scripts such as CSS, JavaScript,
+RSS, favicons, etc. to the current document. Equivalent to the current <code>&lt;link&gt;</code> tag. This tag takes the following attributes:</p>
 
 <ul>
-<li><code>charset</code>: The character encoding such as "UTF-8".</li>
-<li><code>href</code>: The link to the source file.</li>
-<li><code>media</code>: The type of device the item should run on, for example, "mobile" or "tablet".</li>
-<li><code>type</code>: The MIME type of the document, for example, <code>text/javascript</code>.</li>
-</ul>
+<li>
+<code>charset</code>: The character encoding such as "UTF-8".</li>
+<li>
+<code>href</code>: The link to the source file.</li>
+<li>
+<code>media</code>: The type of device the item should run on, for example, "mobile" or "tablet".</li>
+<li>
+<code>type</code>: The MIME type of the document, for example, <code>text/javascript</code>.</li>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+    <span class="nt">&lt;html:link</span> <span class="na">src=</span><span class="s">"js/main.js"</span> <span class="na">title=</span><span class="s">"Main Script"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-    &lt;html:link src="js/main.js" title="Main Script" type="text/javascript"&gt;
-  &lt;/html:head&gt;
-&lt;/html:html&gt;
-</code></p>
-
-<h5><code>&lt;html:body&gt;</code></h5>
+<h5>
+<a name="htmlbody" class="anchor" href="#htmlbody"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:body&gt;</code>
+</h5>
 
 <p>This is the body of the HTML document. Equivalent to the current <code>&lt;body&gt;</code> tag. This is where you'd place most of the stuff that would be visible to the users like text, media, and so on.</p>
 
 <p><em>Example:</em></p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;!-- Your web page's content would go here --&gt;
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="c">&lt;!-- Your web page's content would go here --&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<h5><code>&lt;html:a&gt;</code></h5>
+<h5>
+<a name="htmla" class="anchor" href="#htmla"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:a&gt;</code>
+</h5>
 
 <p>This tag represents either an anchor on the page, or a link to another web page. Equivalent to the current <code>&lt;a&gt;</code> tag. The <code>&lt;html:a&gt;</code> tag takes one required attribute which is the <code>href</code> which directs the anchor or link where to go. For an anchor you'd use the syntax <code>#id-of-element-to-link-to</code> and for a link to another web page you'd simply insert the link like <code>http://google.com</code>.</p>
 
@@ -210,24 +257,24 @@
 <ul>
 <li><code>href</code></li>
 <li><code>name</code></li>
-<li><code>target</code> (can be <code>blank</code>, <code>parent</code>, <code>top</code> or <code>self</code>)</li>
-</ul>
+<li>
+<code>target</code> (can be <code>blank</code>, <code>parent</code>, <code>top</code> or <code>self</code>)</li>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;html:a</span> <span class="na">href=</span><span class="s">"http://google.com"</span><span class="nt">&gt;</span>Go to google.com!<span class="nt">&lt;/html:a&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;html:a href="http://google.com"&gt;Go to google.com!&lt;/html:a&gt;
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
-
-<h5><code>&lt;html:button&gt;</code></h5>
+<h5>
+<a name="htmlbutton" class="anchor" href="#htmlbutton"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:button&gt;</code>
+</h5>
 
 <p>Similar to <code>&lt;button&gt;</code> or <code>&lt;input type="button"&gt;</code> in HTML&lt;=5, the <code>&lt;html:button&gt;</code> tag allows you to create a button for user interaction on a page.</p>
 
@@ -235,70 +282,80 @@
 
 <ul>
 <li><code>disabled</code></li>
-</ul>
+</ul><div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;html:button&gt;</span>Push me!<span class="nt">&lt;/html:button&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;html:button&gt;Push me!&lt;/html:button&gt;
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
-
-<h5><code>&lt;html:media&gt;</code></h5>
+<h5>
+<a name="htmlmedia" class="anchor" href="#htmlmedia"><span class="mini-icon mini-icon-link"></span></a><code>&lt;html:media&gt;</code>
+</h5>
 
 <p>This tag encapsulates what we now have for media which are tags like <code>&lt;img&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;embed&gt;</code>, and so on. Instead of a tag for each file type, the browser will just know how to run it by the <code>type</code> attribute, or will make a guess based on the file extension, or lastly, by the MIME type.</p>
 
 <p><em>Example:</em></p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;!-- Image --&gt;
-    &lt;html:media src="images/logo.jpg" type="image"&gt;
-    &lt;!-- Video, shows you don't "need" a type --&gt;
-    &lt;html:media src="videos/cute-cat.mov"&gt;
-    &lt;!-- Some made up format, browser will ignore if it doesn't know it --&gt;
-    &lt;html:media src="misc/example.abc" type="abc"&gt;
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="c">&lt;!-- Image --&gt;</span>
+    <span class="nt">&lt;html:media</span> <span class="na">src=</span><span class="s">"images/logo.jpg"</span> <span class="na">type=</span><span class="s">"image"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Video, shows you don't "need" a type --&gt;</span>
+    <span class="nt">&lt;html:media</span> <span class="na">src=</span><span class="s">"videos/cute-cat.mov"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Some made up format, browser will ignore if it doesn't know it --&gt;</span>
+    <span class="nt">&lt;html:media</span> <span class="na">src=</span><span class="s">"misc/example.abc"</span> <span class="na">type=</span><span class="s">"abc"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<h4>Section 3B - HTML Forms API</h4>
+<h4>
+<a name="section-3b---html-forms-api" class="anchor" href="#section-3b---html-forms-api"><span class="mini-icon mini-icon-link"></span></a>Section 3B - HTML Forms API</h4>
 
-<p>HTML Forms are separate from the HTML API to allow development on forms to not have to slow down for the entire HTML spec. Forms are constantly evolving with Sliders, color pickers, date and time pickers, progress bars and more. Forms really are sort of their own "thing" in HTML, so in HTML6 we've broken them into their own API.</p>
+<p>HTML Forms are separate from the HTML API to allow development on
+forms to not have to slow down for the entire HTML spec. Forms are
+constantly evolving with Sliders, color pickers, date and time pickers,
+progress bars and more. Forms really are sort of their own "thing" in
+HTML, so in HTML6 we've broken them into their own API.</p>
 
-<h5><code>&lt;form:form&gt;</code></h5>
+<h5>
+<a name="formform" class="anchor" href="#formform"><span class="mini-icon mini-icon-link"></span></a><code>&lt;form:form&gt;</code>
+</h5>
 
-<p>This tag creates a new form. Has two attributes, <code>method</code> and <code>action</code>. As with current HTML forms, method can be <code>POST</code> or <code>GET</code> (they can be lowercase too) and will send the form with that as the HTTP header. More details on GET and POST can be found at W3.org. The <code>action</code> attribute tells the form where to send the data. By default the "method" is set to GET and the "action" is the current page.</p>
+<p>This tag creates a new form. Has two attributes, <code>method</code> and <code>action</code>. As with current HTML forms, method can be <code>POST</code> or <code>GET</code>
+ (they can be lowercase too) and will send the form with that as the
+HTTP header. More details on GET and POST can be found at W3.org. The <code>action</code> attribute tells the form where to send the data. By default the "method" is set to GET and the "action" is the current page.</p>
 
 <p><em>Example:</em></p>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;form:form method="post" action="/sendmail"&gt;
-      &lt;!-- Form inputs and stuff go here --&gt;
-    &lt;/form:form&gt; <br />
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;form:form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">"/sendmail"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Form inputs and stuff go here --&gt;</span>
+    <span class="nt">&lt;/form:form&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<h5><code>&lt;form:input&gt;</code></h5>
+<h5>
+<a name="forminput" class="anchor" href="#forminput"><span class="mini-icon mini-icon-link"></span></a><code>&lt;form:input&gt;</code>
+</h5>
 
-<p>This tag creates a new form input. Any type of form input that you can enter text into would be an input. In HTML currently this includes everything from a plain old text input to a <code>&lt;textarea&gt;</code> and would also include HTML5 style for inputs like <code>email</code> and <code>url</code>. The full list of possible input types are:</p>
+<p>This tag creates a new form input. Any type of form input that you
+can enter text into would be an input. In HTML currently this includes
+everything from a plain old text input to a <code>&lt;textarea&gt;</code> and would also include HTML5 style for inputs like <code>email</code> and <code>url</code>. The full list of possible input types are:</p>
 
 <ul>
 <li><code>text</code></li>
@@ -315,10 +372,9 @@
 <li><code>datetime-local</code></li>
 <li><code>textarea</code></li>
 <li><code>password</code></li>
-<li><code>file</code> - (<code>multiple</code>)</li>
-</ul>
-
-<p>The possible attributes on an input are:</p>
+<li>
+<code>file</code> - (<code>multiple</code>)</li>
+</ul><p>The possible attributes on an input are:</p>
 
 <ul>
 <li><code>name</code></li>
@@ -328,54 +384,56 @@
 <li><code>autofocus</code></li>
 <li><code>required</code></li>
 <li><code>novalidate</code></li>
-</ul>
-
-<p>The following are attributes that will work on any input except file inputs:</p>
+</ul><p>The following are attributes that will work on any input except file inputs:</p>
 
 <ul>
 <li><code>maxlength</code></li>
 <li><code>autocomplete</code></li>
 <li><code>pattern</code></li>
 <li><code>spellcheck</code></li>
-<li><code>match</code> - This is new to HTML6, give it a name of a field you want it to require a match on.</li>
-</ul>
+<li>
+<code>match</code> - This is new to HTML6, give it a name of a field you want it to require a match on.</li>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;form:form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">"/sendmail"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Simple input (defaults to text) --&gt;</span>
+      <span class="nt">&lt;form:input&gt;</span>
+      <span class="c">&lt;!-- A new HTML6 match example --&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"user_password"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">match=</span><span class="s">"user_password"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Advanced example --&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">"user@site.com"</span> <span class="err">autofocus</span> <span class="err">required</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form:form&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;form:form method="post" action="/sendmail"&gt;
-      &lt;!-- Simple input (defaults to text) --&gt;
-      &lt;form:input&gt;
-      &lt;!--  A new HTML6 match example --&gt;
-      &lt;form:input type="password" name="user_password"&gt;
-      &lt;form:input type="password" match="user_password"&gt;
-      &lt;!-- Advanced example --&gt;
-      &lt;form:input type="email" placeholder="user@site.com" autofocus required&gt;
-    &lt;/form:form&gt; <br />
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<h5>
+<a name="formselect" class="anchor" href="#formselect"><span class="mini-icon mini-icon-link"></span></a><code>&lt;form:select&gt;</code>
+</h5>
 
-<h5><code>&lt;form:select&gt;</code></h5>
-
-<p>The <code>&lt;form:select&gt;</code> tag lets a user select from options rather than input anything. For example an HTML&lt;=5 <code>&lt;select&gt;</code> would be close to the same. Some others would be a calendar, color picker, and range because these are predefined values in which you choose from.</p>
+<p>The <code>&lt;form:select&gt;</code> tag lets a user select from options rather than input anything. For example an HTML&lt;=5 <code>&lt;select&gt;</code>
+ would be close to the same. Some others would be a calendar, color
+picker, and range because these are predefined values in which you
+choose from.</p>
 
 <p>The possible input types follow along with attributes that are specific to it:</p>
 
 <ul>
-<li><code>select</code> - (<code>multiple</code>)</li>
+<li>
+<code>select</code> - (<code>multiple</code>)</li>
 <li><code>color</code></li>
-<li><code>calendar</code> - (<code>range</code>)</li>
-<li><code>meter</code> - (<code>range</code>, <code>step</code>)</li>
-</ul>
-
-<p>Attributes that work for all select types are:</p>
+<li>
+<code>calendar</code> - (<code>range</code>)</li>
+<li>
+<code>meter</code> - (<code>range</code>, <code>step</code>)</li>
+</ul><p>Attributes that work for all select types are:</p>
 
 <ul>
 <li><code>name</code></li>
@@ -383,162 +441,196 @@
 <li><code>disabled</code></li>
 <li><code>required</code></li>
 <li><code>autofocus</code></li>
-</ul>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;form:form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">"/scheduler"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Normal select --&gt;</span>
+      <span class="nt">&lt;html:select</span> <span class="na">type=</span><span class="s">"select"</span> <span class="na">name=</span><span class="s">"favorite_color"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Calendar example --&gt;</span>
+      <span class="nt">&lt;html:select</span> <span class="na">type=</span><span class="s">"calendar"</span> <span class="na">name=</span><span class="s">"the_calendar"</span> <span class="na">range=</span><span class="s">"10/10/10-10/10/11"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form:form&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;form:form method="post" action="/scheduler"&gt;
-      &lt;!-- Normal select --&gt;
-      &lt;html:select type="select" name="favorite_color"&gt;
-      &lt;!-- Calendar example --&gt;
-      &lt;html:select type="calendar" name="the_calendar" range="10/10/10-10/10/11"&gt;
-    &lt;/form:form&gt; <br />
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<h5>
+<a name="formstatus" class="anchor" href="#formstatus"><span class="mini-icon mini-icon-link"></span></a><code>&lt;form:status&gt;</code>
+</h5>
 
-<h5><code>&lt;form:status&gt;</code></h5>
-
-<p>The <code>&lt;form:status&gt;</code> tag allows you to give feedback, or a "status" update to your users. Useful for an upload progress bar or steps in a multi-page form, for example. These are similar to the <code>&lt;progress&gt;</code> and <code>&lt;meter&gt;</code> elements in HTML5.</p>
+<p>The <code>&lt;form:status&gt;</code> tag allows you to give feedback,
+ or a "status" update to your users. Useful for an upload progress bar
+or steps in a multi-page form, for example. These are similar to the <code>&lt;progress&gt;</code> and <code>&lt;meter&gt;</code> elements in HTML5.</p>
 
 <ul>
 <li><code>progress</code></li>
 <li><code>meter</code></li>
-</ul>
-
-<p>Attributes that work for all status types are:</p>
+</ul><p>Attributes that work for all status types are:</p>
 
 <ul>
 <li><code>min</code></li>
 <li><code>max</code></li>
 <li><code>value</code></li>
-</ul>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;form:form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">"/upload"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Example showing "steps" in a form --&gt;</span>
+      <span class="nt">&lt;form:status</span> <span class="na">type=</span><span class="s">"meter"</span> <span class="na">min=</span><span class="s">"1"</span> <span class="na">max=</span><span class="s">"3"</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;message&gt;</span>You're currently on step 2 of 3<span class="nt">&lt;/message&gt;</span>
+      <span class="c">&lt;!-- Example showing an upload progress bar --&gt;</span>
+      <span class="nt">&lt;form:status</span> <span class="na">type=</span><span class="s">"progress"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">value=</span><span class="s">"25"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form:form&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;form:form method="post" action="/upload"&gt;
-      &lt;!-- Example showing "steps" in a form --&gt;
-      &lt;form:status type="meter" min="1" max="3" value="2"&gt;
-      &lt;message&gt;You're currently on step 2 of 3&lt;/message&gt;
-      &lt;!-- Example showing an upload progress bar --&gt;
-      &lt;form:status type="progress" max="100" value="25"&gt;
-    &lt;/form:form&gt; <br />
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<h5>
+<a name="formlabel" class="anchor" href="#formlabel"><span class="mini-icon mini-icon-link"></span></a><code>&lt;form:label&gt;</code>
+</h5>
 
-<h5><code>&lt;form:label&gt;</code></h5>
-
-<p>The <code>&lt;form:label&gt;</code> tag allows you to label inputs for the user. It links text to an input and when click will focus on the connected input. It matches the label's <code>for</code> attribute to the <code>id</code> of any form element.</p>
+<p>The <code>&lt;form:label&gt;</code> tag allows you to label inputs
+for the user. It links text to an input and when click will focus on the
+ connected input. It matches the label's <code>for</code> attribute to the <code>id</code> of any form element.</p>
 
 <p>Attributes that work for the <code>&lt;form:label&gt;</code> tag are:</p>
 
 <ul>
 <li><code>for</code></li>
-</ul>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;form:form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">"/login"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form:label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span>Username<span class="nt">&lt;/form:label&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">id=</span><span class="s">"username"</span> <span class="na">name=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form:label</span> <span class="na">for=</span><span class="s">"password"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/form:label&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">id=</span><span class="s">"password"</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form:form&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;form:form method="post" action="/login"&gt;
-      &lt;form:label for="username"&gt;Username&lt;/form:label&gt;
-      &lt;form:input id="username" name="username"&gt;
-      &lt;form:label for="password"&gt;Password&lt;/form:label&gt;
-      &lt;form:input id="password" name="password" type="password"&gt;
-    &lt;/form:form&gt; <br />
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<h5>
+<a name="formsubmit" class="anchor" href="#formsubmit"><span class="mini-icon mini-icon-link"></span></a><code>&lt;form:submit&gt;</code>
+</h5>
 
-<h5><code>&lt;form:submit&gt;</code></h5>
-
-<p>Just like <code>&lt;input type="submit"&gt;</code> in HTML&lt;=5, <code>&lt;form:submit&gt;</code> will create a button which submits your form. If a submit button is present in a form, pressing enter while focused inside of a form will submit it.</p>
+<p>Just like <code>&lt;input type="submit"&gt;</code> in HTML&lt;=5, <code>&lt;form:submit&gt;</code>
+ will create a button which submits your form. If a submit button is
+present in a form, pressing enter while focused inside of a form will
+submit it.</p>
 
 <p>Attributes that work for the <code>&lt;form:submit&gt;</code> tag are:</p>
 
 <ul>
 <li><code>name</code></li>
 <li><code>value</code></li>
-</ul>
+</ul><p><em>Example:</em></p>
 
-<p><em>Example:</em></p>
+<div class="highlight"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html:html&gt;</span>
+  <span class="nt">&lt;html:head&gt;</span>
+    <span class="nt">&lt;html:title&gt;</span>HTML6 Spec Version 0.1<span class="nt">&lt;/html:title&gt;</span>
+  <span class="nt">&lt;/html:head&gt;</span>
+  <span class="nt">&lt;html:body&gt;</span>
+    <span class="nt">&lt;form:form</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">action=</span><span class="s">"/login"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form:label&gt;</span>Login<span class="nt">&lt;/form:label&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">name=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form:input</span> <span class="na">name=</span><span class="s">"password"</span> <span class="na">type=</span><span class="s">"password"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form:submit</span> <span class="na">name=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"submit"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form:form&gt;</span>
+  <span class="nt">&lt;/html:body&gt;</span>
+<span class="nt">&lt;/html:html&gt;</span>
+</pre></div>
 
-<p><code>xml
-&lt;!DOCTYPE html&gt;
-&lt;html:html&gt;
-  &lt;html:head&gt;
-    &lt;html:title&gt;HTML6 Spec Version 0.1&lt;/html:title&gt;
-  &lt;/html:head&gt;
-  &lt;html:body&gt;
-    &lt;form:form method="post" action="/login"&gt;
-      &lt;form:label&gt;Login&lt;/form:label&gt;
-      &lt;form:input name="username"&gt;
-      &lt;form:input name="password" type="password"&gt;
-      &lt;form:submit name="submit" value="submit"&gt;
-    &lt;/form:form&gt; <br />
-  &lt;/html:body&gt;
-&lt;/html:html&gt;
-</code></p>
+<h3>
+<a name="section-4---tag-types" class="anchor" href="#section-4---tag-types"><span class="mini-icon mini-icon-link"></span></a>Section 4 - Tag types</h3>
 
-<h3>Section 4 - Tag types</h3>
+<p>In HTML6, like in all previous HTML versions, there are two types of
+tags - single tags and double tags. Single tags can't have any text
+content, they have only attributes. This is an example of single tag
+(both elements are interpreted the same way):</p>
 
-<p>In HTML6, like in all previous HTML versions, there are two types of tags - single tags and double tags. Single tags can't have any text content, they have only attributes. This is an example of single tag (both elements are interpreted the same way):
-<code>xml
-&lt;html:meta type="author" content="m93a"&gt;
-&lt;html:meta type="author" content="m93a" /&gt;
-</code></p>
+<div class="highlight"><pre><span class="nt">&lt;html:meta</span> <span class="na">type=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"m93a"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;html:meta</span> <span class="na">type=</span><span class="s">"author"</span> <span class="na">content=</span><span class="s">"m93a"</span> <span class="nt">/&gt;</span>
+</pre></div>
 
-<p>Unlike double tag, single doesn't need to be closed. Double tags usually have some text content so they are made of an opening and closing tag. If it has no text content, it can be shortened to the self-closing single variant. Examples:
-```xml
-<html:link href="./a.html">Text content</html:link></p>
+<p>Unlike double tag, single doesn't need to be closed. Double tags
+usually have some text content so they are made of an opening and
+closing tag. If it has no text content, it can be shortened to the
+self-closing single variant. Examples:</p>
 
-<!-- This shortand... -->
+<div class="highlight"><pre><span class="nt">&lt;html:link</span> <span class="na">href=</span><span class="s">"./a.html"</span><span class="nt">&gt;</span>Text content<span class="nt">&lt;/html:link&gt;</span>
 
-<js:script src="./a.js" />
-<!-- ...means in fact this: -->
+<span class="c">&lt;!-- This shortand... --&gt;</span>
+<span class="nt">&lt;js:script</span> <span class="na">src=</span><span class="s">"./a.js"</span> <span class="nt">/&gt;</span>
+<span class="c">&lt;!-- ...means in fact this: --&gt;</span>
+<span class="nt">&lt;js:script</span> <span class="na">src=</span><span class="s">"./a.js"</span><span class="nt">&gt;&lt;/js:script&gt;</span>
+</pre></div>
 
-<p><js:script src="./a.js"></js:script>
-```</p>
+<h3>
+<a name="section-5---using-html6-now" class="anchor" href="#section-5---using-html6-now"><span class="mini-icon mini-icon-link"></span></a>Section 5 - Using HTML6 Now</h3>
 
-<h3>Section 5 - Using HTML6 Now</h3>
-
-<p>Unfortunately you can't but I'm hard at work on a polyfill that will transform your HTML6 document into a normal HTML document with JS. There will be a front-end one (which I wouldn't use in production due to the processing time and because search engines won't understand what the document is) and a Node.js one which will transform it and give it to the browser as if it were HTML.</p>
+<p>Unfortunately you can't but I'm hard at work on a polyfill that will
+transform your HTML6 document into a normal HTML document with JS. There
+ will be a front-end one (which I wouldn't use in production due to the
+processing time and because search engines won't understand what the
+document is) and a Node.js one which will transform it and give it to
+the browser as if it were HTML.</p>
 
 <p>If you'd like it in another language submit it to the <a href="https://github.com/OscarGodson/HTML6/issues">issue tracker</a> or send a <a href="https://github.com/OscarGodson/HTML6/pulls">pull request</a>.</p>
 
-<h3>Section 6 - Conclusion</h3>
+<h3>
+<a name="section-6---conclusion" class="anchor" href="#section-6---conclusion"><span class="mini-icon mini-icon-link"></span></a>Section 6 - Conclusion</h3>
 
-<p>This is simply an idea. It's an idea I've personally <a href="http://kneedeepincode.com/topics/a-better-html/">had for years</a>, but it's in no way finished. There's still a lot missing and a lot I haven't yet thought about, but it's a start. I'd love to hear your thoughts in the <a href="https://github.com/OscarGodson/HTML6/issues">issue tracker</a> or better yet, send a <a href="https://github.com/OscarGodson/HTML6/pulls">pull request</a> of what you think should be changed or added.</p>
+<p>This is simply an idea. It's an idea I've personally <a href="http://kneedeepincode.com/topics/a-better-html/">had for years</a>,
+ but it's in no way finished. There's still a lot missing and a lot I
+haven't yet thought about, but it's a start. I'd love to hear your
+thoughts in the <a href="https://github.com/OscarGodson/HTML6/issues">issue tracker</a> or better yet, send a <a href="https://github.com/OscarGodson/HTML6/pulls">pull request</a> of what you think should be changed or added.</p>
 
-<h4>Copyright on all documents and code:</h4>
+<h4>
+<a name="copyright-on-all-documents-and-code" class="anchor" href="#copyright-on-all-documents-and-code"><span class="mini-icon mini-icon-link"></span></a>Copyright on all documents and code:</h4>
 
-<p>Copyright (c) 2012 Oscar Godson oscargodson@gmail.com</p>
+<p>Copyright (c) 2012 Oscar Godson <a href="mailto:oscargodson@gmail.com">oscargodson@gmail.com</a></p>
 
-<p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining
+ a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
 
 <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
 
-<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      </article>
+    </div>
+  </div>
+  
+  <div>&nbsp;</div>
+
+  </div>
     <script src="js/jquery-1.8.0.min.js"></script>
     <script src="js/prettify.js"></script>
     <script src="js/main.js"></script>
