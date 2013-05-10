@@ -478,9 +478,9 @@ Unlike double tag, single doesn't need to be closed. Double tags usually have so
 <html:link href="./a.html">Text content</html:link>
 
 <!-- This shortand... -->
-<js:script src="./a.js" />
+<foo class="bar" />
 <!-- ...means in fact this: -->
-<js:script src="./a.js"></js:script>
+<foo class="bar"></foo>
 ```
 
 
