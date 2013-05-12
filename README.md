@@ -465,13 +465,32 @@ _Example:_
 ```
 
 
-### Section 4 - Using HTML6 Now
+### Section 4 - Tag types
+
+In HTML6, like in all previous HTML versions, there are two types of tags - single tags and double tags. Single tags can't have any text content, they have only attributes. This is an example of single tag (both elements are interpreted the same way):
+```xml
+<html:meta type="author" content="m93a">
+<html:meta type="author" content="m93a" />
+```
+
+Unlike double tag, single doesn't need to be closed. Double tags usually have some text content so they are made of an opening and closing tag. If it has no text content, it can be shortened to the self-closing single variant. Examples:
+```xml
+<html:link href="./a.html">Text content</html:link>
+
+<!-- This shortand... -->
+<foo class="bar" />
+<!-- ...means in fact this: -->
+<foo class="bar"></foo>
+```
+
+
+### Section 5 - Using HTML6 Now
 
 Unfortunately you can't but I'm hard at work on a polyfill that will transform your HTML6 document into a normal HTML document with JS. There will be a front-end one (which I wouldn't use in production due to the processing time and because search engines won't understand what the document is) and a Node.js one which will transform it and give it to the browser as if it were HTML.
 
 If you'd like it in another language submit it to the [issue tracker](https://github.com/OscarGodson/HTML6/issues) or send a [pull request](https://github.com/OscarGodson/HTML6/pulls).
 
-### Section 5 - Conclusion
+### Section 6 - Conclusion
 
 This is simply an idea. It's an idea I've personally [had for years](http://kneedeepincode.com/topics/a-better-html/), but it's in no way finished. There's still a lot missing and a lot I haven't yet thought about, but it's a start. I'd love to hear your thoughts in the [issue tracker](https://github.com/OscarGodson/HTML6/issues) or better yet, send a [pull request](https://github.com/OscarGodson/HTML6/pulls) of what you think should be changed or added.
 
