@@ -467,13 +467,13 @@ _Example:_
 
 ### Section 4 - Tag types
 
-In HTML6, like in all previous HTML versions, there are two types of tags - single tags and double tags. Single tags can't have any text content, they have only attributes. This is an example of single tag (both elements are interpreted the same way):
+In HTML6, like in all previous HTML versions, there are two types of tags: single tags and double tags. Single tags can't have any text content, they only have attributes. This is an example of single tag (both elements are interpreted the same way):
 ```xml
 <html:meta type="author" content="m93a">
 <html:meta type="author" content="m93a" />
 ```
 
-Unlike double tag, single doesn't need to be closed. Double tags usually have some text content so they are made of an opening and closing tag. If it has no text content, it can be shortened to the self-closing single variant. Examples:
+Unlike the double tag, the single tag doesn't need to be closed. Double tags usually have some text content so they are made of an opening and closing tag. If it has no text content, it can be shortened to the self-closing single variant. Examples:
 ```xml
 <html:link href="./a.html">Text content</html:link>
 
