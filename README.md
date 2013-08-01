@@ -1,6 +1,6 @@
 # HTML6
 
-![HTML6](https://raw.github.com/OscarGodson/HTML6/master/malay.jpg)
+![HTML6](malay.jpg)
 
 ## The Spec That Brings Us Freedom
 
