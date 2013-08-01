@@ -80,7 +80,7 @@ So, what does this look like? Below is an example of a full HTML6 document. We'l
 
 As you'll see, there are some weird `<html:x>` tags throughout this sample. Those are the namespaced elements that belong to the W3C and HTML6 spec. These elements trigger browser events. For example, the `<html:media type="image">` element will make an image appear or, the `<html:title>` element makes the title bar of the browser change and so on.
 
-All those other elements are just for you. None of those elements mean anything to the browser. They're simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like `<p>` or the `<h1>` tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used `<paragraph>`, `<text>`, or `<helloworldanythingiwant>`. 
+All those other elements are just for you. None of those elements mean anything to the browser. They're simply hooks for CSS and JS and to make your code more semantic. The HTML elements you see in there like `<p>` or the `<h1>` tags are just because I like using those as ways to markup paragraphs or the most important header, but I could have used `<paragraph>`, `<text>`, or `<helloworldanythingiwant>`.
 
 It's whatever makes sense to you and your application.
 
@@ -273,7 +273,7 @@ _Example:_
   <html:body>
     <form:form method="post" action="/sendmail">
       <!-- Form inputs and stuff go here -->
-    </form:form>    
+    </form:form>
   </html:body>
 </html:html>
 ```
@@ -333,7 +333,7 @@ _Example:_
       <form:input type="password" match="user_password">
       <!-- Advanced example -->
       <form:input type="email" placeholder="user@site.com" autofocus required>
-    </form:form>    
+    </form:form>
   </html:body>
 </html:html>
 ```
@@ -371,7 +371,7 @@ _Example:_
       <html:select type="select" name="favorite_color">
       <!-- Calendar example -->
       <html:select type="calendar" name="the_calendar" range="10/10/10-10/10/11">
-    </form:form>    
+    </form:form>
   </html:body>
 </html:html>
 ```
@@ -404,7 +404,7 @@ _Example:_
       <message>You're currently on step 2 of 3</message>
       <!-- Example showing an upload progress bar -->
       <form:status type="progress" max="100" value="25">
-    </form:form>    
+    </form:form>
   </html:body>
 </html:html>
 ```
@@ -431,7 +431,7 @@ _Example:_
       <form:input id="username" name="username">
       <form:label for="password">Password</form:label>
       <form:input id="password" name="password" type="password">
-    </form:form>    
+    </form:form>
   </html:body>
 </html:html>
 ```
@@ -459,7 +459,7 @@ _Example:_
       <form:input name="username">
       <form:input name="password" type="password">
       <form:submit name="submit" value="submit">
-    </form:form>    
+    </form:form>
   </html:body>
 </html:html>
 ```
