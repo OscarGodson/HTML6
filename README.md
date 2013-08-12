@@ -186,7 +186,7 @@ This tag takes the following attributes:
 
 - `rel`: The type of the document, eg. `stylesheet`, `script`, `snippet`, `favicon`.
 - `charset`: The character encoding such as "UTF-8".
-- `href`: The link to the source file, can be relative or absolute.
+- `src`: The link to the source file, can be relative or absolute.
 - `media`: The type of device the item should run on, for example, "mobile" or "tablet".
 - `type`: The MIME type of the document, eg. `text/javascript`.
 
