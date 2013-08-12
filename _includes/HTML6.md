@@ -1,6 +1,6 @@
 # HTML6
 
-![HTML6](malay.jpg)
+![HTML6](http://html6spec.com/malay.jpg)
 
 ## The Spec That Brings Us Freedom
 
