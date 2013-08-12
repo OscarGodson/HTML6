@@ -29,7 +29,7 @@ Now, without further adieu, let me introduce you to HTML6.
 
 ### Section 2 - The Concept
 
-HTML6 is conceptually HTML with XML like namespaces. If you don't know XML, or don't know what XML namespaces are they're basically a way to allow you to use the same tag without it conflicting with a different tag. You've probably actually seen one before in the XHTML DOCTYPE: `xmlns:xhtml="http://www.w3.org/1999/xhtml"`
+HTML6 is conceptually HTML with XML like namespaces. If you don't know XML, or don't know what XML namespaces are, they're basically a way to allow you to use the same tag without it conflicting with a different tag. You've probably actually seen one before in the XHTML DOCTYPE: `xmlns:xhtml="http://www.w3.org/1999/xhtml"`
 
 In HTML6 we take advantage of this ingenious concept by giving us freedom to use whatever tag we want by the W3C reserving namespaces and not tags. The W3C would basically reserve the right to all namespaces, and each namespace they reserve will trigger a different HTML API.
 
@@ -136,8 +136,13 @@ _Example:_
 
 This is a bit different then the current HTML version. Meta data in HTML6 can be anything. Unlike HTML now, there are no required or non-standard meta types. It's used to store content for you as a developer, or for other sites as a way to grab information such as a page description.
 
-_Example:_
+_Normative:_  
+This tag has to be a descendant of `html:head` and takes the following attributes:
 
+- `type`: What type of information is under `value`, eg. `author`, `description` or `generator`; there can be multiple types, separated by `,`.
+- `value`: The information itself.
+
+_Example:_  
 ```xml
 <!DOCTYPE html>
 <html:html>
@@ -148,23 +153,50 @@ _Example:_
 </html:html>
 ```
 
-##### `<html:link>`
+##### `<html:alter>`
 
-This links external documents and scripts such as CSS, JavaScript, RSS, favicons, etc. to the current document. Equivalent to the current `<link>` tag. This tag takes the following attributes:
+This links document's alternatives in other formats, eg. PDF, RTF, RSS or Atom feed. It's similar to the current HTML `link` tag.
 
+_Normative:_  
+This tag has to be a descendant of `html:head` and takes the following attributes:
+
+- `title`: The name of the alternative document.
 - `charset`: The character encoding such as "UTF-8".
-- `href`: The link to the source file.
-- `media`: The type of device the item should run on, for example, "mobile" or "tablet".
+- `href`: The link to the source file, can be relative or absolute.
+- `media`: The type of device the item should run on, eg. `mobile` or `tablet`.
 - `type`: The MIME type of the document, for example, `text/javascript`.
 
-_Example:_
-
+_Example:_  
 ```xml
 <!DOCTYPE html>
 <html:html>
   <html:head>
     <html:title>HTML6 Spec Version 0.1</html:title>
-    <html:link src="js/main.js" title="Main Script" type="text/javascript">
+    <html:alter src="rss?feed=1" title="RSS Feed" type="application/rss+xml">
+  </html:head>
+</html:html>
+```
+
+##### `<html:include>`
+
+This links external files that should be included in the document such as HTML snippets, CSS templates of JS scripts. It's similar to the current HTML `link` tag.
+
+_Normative:_  
+This tag takes the following attributes:
+
+- `rel`: The type of the document, eg. `stylesheet`, `script`, `snippet`, `favicon`.
+- `charset`: The character encoding such as "UTF-8".
+- `src`: The link to the source file, can be relative or absolute.
+- `media`: The type of device the item should run on, for example, "mobile" or "tablet".
+- `type`: The MIME type of the document, eg. `text/javascript`.
+
+_Example:_  
+```xml
+<!DOCTYPE html>
+<html:html>
+  <html:head>
+    <html:title>HTML6 Spec Version 0.1</html:title>
+    <html:include src="js/main.js" type="text/javascript">
   </html:head>
 </html:html>
 ```
@@ -187,15 +219,16 @@ _Example:_
 </html:html>
 ```
 
-##### `<html:a>`
+##### `<html:link>`
 
-This tag represents either an anchor on the page, or a link to another web page. Equivalent to the current `<a>` tag. The `<html:a>` tag takes one required attribute which is the `href` which directs the anchor or link where to go. For an anchor you'd use the syntax `#id-of-element-to-link-to` and for a link to another web page you'd simply insert the link like `http://google.com`.
+This tag represents  a link to another web page. It's similar to the current `<a>` tag.
 
-Attributes available to the `<a>` tag are:
+_Normative:_  
+Attributes available to this tag are:
 
-- `href`
-- `name`
-- `target` (can be `blank`, `parent`, `top` or `self`)
+- `href`: The link to the target document, can be relative or absolute.
+- `target`: Which window will open the document (can be `blank`, `parent`, `top` or `self`, default is `self`). **This attribute is obsolete**.
+- `newwindow`: Boolean attribute saying that link will be opened in a new window (equivalent to `target=blank`).
 
 _Example:_
 
@@ -206,7 +239,33 @@ _Example:_
     <html:title>HTML6 Spec Version 0.1</html:title>
   </html:head>
   <html:body>
-    <html:a href="http://google.com">Go to google.com!</html:a>
+    <html:link href="http://google.com">Go to google.com!</html:link>
+  </html:body>
+</html:html>
+```
+
+##### `<html:anch>`
+
+This tag represents an anchor on the page. It's similar to the current `<a>` tag.
+
+_Normative:_  
+Attributes available to this tag are:
+
+- `for`: Reference to a tag on the page using CSS selector. If selector matches multiple tags, browser should jump to the first of them and order the user to browse through them.
+- `margin`: When the user clicks on the anchor, this attribute defines the space between the top of the tag and the edge of the browser's navigation bar.
+
+_Example:_
+
+```xml
+<!DOCTYPE html>
+<html:html>
+  <html:head>
+    <html:title>HTML6 Spec Version 0.1</html:title>
+  </html:head>
+  <html:body>
+    <h1 id="top">This is a top of this page</h1>
+    This is a really long text about some really stupid things.
+    <html:anch for="#top">Go to the top of this page!</html:anch>
   </html:body>
 </html:html>
 ```
