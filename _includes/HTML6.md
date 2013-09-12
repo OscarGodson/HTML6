@@ -25,7 +25,7 @@ Even better yet, how about finally adding support for new types of media by simp
 
 The web is moving towards a giant app store and we need to embrace it. The markup we use shouldn't work against us, it should work for us. This spec is to do just that. To finally break free of fatuous rules and standards and to give us, developers, total freedom to code as we please bringing the web a more semantic, clean, and human readable markup.
 
-Now, without further adieu, let me introduce you to HTML6.
+Now, without further ado, let me introduce you to HTML6.
 
 ### Section 2 - The Concept
 
