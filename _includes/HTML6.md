@@ -219,14 +219,15 @@ _Example:_
 </html:html>
 ```
 
-##### `<html:link>`
+##### `<html:a>`
 
-This tag represents  a link to another web page. It's similar to the current `<a>` tag.
+This tag represents a link to another web page or an anchor. It's similar to the current `<a>` tag.
 
 _Normative:_  
 Attributes available to this tag are:
 
-- `href`: The link to the target document, can be relative or absolute.
+- `href`: The link to the target document (can be relative or absolute) or a hashtag and element id (like this: `#some-foo-element`).
+- `for`: CSS selector for when you need to make an anchor to an element with no id (always links to the first match).
 - `target`: Which window will open the document (can be `blank`, `parent`, `top` or `self`, default is `self`). **This attribute is obsolete**.
 - `newwindow`: Boolean attribute saying that link will be opened in a new window (equivalent to `target=blank`).
 
@@ -239,33 +240,10 @@ _Example:_
     <html:title>HTML6 Spec Version 0.1</html:title>
   </html:head>
   <html:body>
-    <html:link href="http://google.com">Go to google.com!</html:link>
-  </html:body>
-</html:html>
-```
-
-##### `<html:anch>`
-
-This tag represents an anchor on the page. It's similar to the current `<a>` tag.
-
-_Normative:_  
-Attributes available to this tag are:
-
-- `for`: Reference to a tag on the page using CSS selector. If selector matches multiple tags, browser should jump to the first of them and order the user to browse through them.
-- `margin`: When the user clicks on the anchor, this attribute defines the space between the top of the tag and the edge of the browser's navigation bar.
-
-_Example:_
-
-```xml
-<!DOCTYPE html>
-<html:html>
-  <html:head>
-    <html:title>HTML6 Spec Version 0.1</html:title>
-  </html:head>
-  <html:body>
-    <h1 id="top">This is a top of this page</h1>
-    This is a really long text about some really stupid things.
-    <html:anch for="#top">Go to the top of this page!</html:anch>
+    <h1 id=heading>MyPage</h1>
+    <html:a href="http://google.com">Go to google.com!</html:link>
+    <html:a href="#heading">Back to the top</a>
+    <html:a for="body>h1">Back to the top alternative</a>
   </html:body>
 </html:html>
 ```
