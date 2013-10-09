@@ -179,7 +179,7 @@ _Example:_
 
 ##### `<html:include>`
 
-This links external files that should be included in the document such as HTML snippets, CSS templates of JS scripts. It's similar to the current HTML `link` tag.
+This links external files that should be included in the document such as HTML snippets, CSS templates or JS scripts. It's similar to the current HTML `link` tag.
 
 _Normative:_  
 This tag takes the following attributes:
