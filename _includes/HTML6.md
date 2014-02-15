@@ -104,7 +104,7 @@ _Example:_
 ```
 ##### `<html:head>`
 
-This begins an HTML's head. Equivelent to the current `<html>` tag. The tag contains data that isn't actually displayed (aside from the `<html:title>` which is displayed in the browser's windows). Rather, it's purpose is to get data and scripts that affect the display of the content in the `<html:body>`. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.
+This begins an HTML's head. Equivelent to the current `<head>` tag. The tag contains data that isn't actually displayed (aside from the `<html:title>` which is displayed in the browser's windows). Rather, it's purpose is to get data and scripts that affect the display of the content in the `<html:body>`. These scripts and other sources include things like JavaScript, CSS, RSS feeds, etc.
 
 _Example:_
 
