@@ -1,3 +1,7 @@
+View this page raw.  The html is formatting...
+
+
+
 Would this not utterly destroy search engines?
 
 Search engines rely whole heartedly on differing tags to decide how important something is.
