@@ -1,16 +1,16 @@
 
-    <p><strong>UPDATE:</strong> I copy pasted this years ago, from a blog I don't write at anymore.
-    I first published this nearly three years ago. The site is getting a ton of
-    traffic out of nowhere. I haven't updated this aside from minor typos since
-    then.  Seriously, it was just some random thing I did for fun one day. It's in
-    no way a real spec and should not be taken seriously.
+<p><strong>UPDATE:</strong> I copy pasted this years ago, from a blog I don't write at anymore.
+I first published this nearly three years ago. The site is getting a ton of
+traffic out of nowhere. I haven't updated this aside from minor typos since
+then.  Seriously, it was just some random thing I did for fun one day. It's in
+no way a real spec and should not be taken seriously.
 
-    <p>I've since moved onto starting my own company called <a
-    href="http://getpiggybank.com">Piggybank</a> and I wont be updating this
-    anytime soon.</p>
-    <br>
+<p>I've since moved onto starting my own company called <a
+href="http://getpiggybank.com">Piggybank</a> and I wont be updating this
+anytime soon.</p>
+<br>
 
-    <h1>HTML6</h1>
+<h1>HTML6</h1>
 
 <p><img src="malay.jpg" alt="HTML6"></p>
 
