@@ -1,3 +1,13 @@
+**UPDATE:** I copy pasted this years ago, from a blog I don't write at anymore.
+I first published this nearly three years ago. The site is getting a ton of
+traffic out of nowhere. I haven't updated this aside from minor typos since
+then.  Seriously, it was just some random thing I did for fun one day. It's in
+no way a real spec and should not be taken seriously.
+
+I've since moved onto starting my own company called <a
+href="http://getpiggybank.com">Piggybank</a> and I wont be updating this
+anytime soon.
+
 # HTML6
 
 ![HTML6](http://html6spec.com/malay.jpg)
